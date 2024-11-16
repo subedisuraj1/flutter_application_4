@@ -12,7 +12,7 @@ class NewItem extends StatefulWidget {
 }
 
 class _NewItemState extends State<NewItem> {
-  final _formkey = GlobalKey();
+  final _formkey = GlobalKey<FormState>();
   var _enteredName = '';
   void _saveItem() {
     _formkey.currentState!.validate();
